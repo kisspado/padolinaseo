@@ -1,130 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+  .w3-row-padding img {margin-bottom: 12px}
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {width: 120px;background: #222;}
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {margin-left: 120px}
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  </style>
+  <body class="w3-black">
 
-<head>
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>Back</p>
+    </a>
+  </nav>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="/" class="w3-bar-item w3-button" style="width:25% !important">Back</a>
+    </div>
+  </div>
 
-    <title>Assignment 3</title>
-
-    
-    <link href="css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
-
-   
-    <link href="css/grayscale.min.css" rel="stylesheet">
-
-    
-    <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
-        }
-    }
-    </style>
-
-</head>
-
-<body id="page-top">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar fixed-top navbar-toggleable-md navbar-light">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
-            Menu <i class="fa fa-bars"></i>
-        </button>
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">Question 3</a>
-            <div class="collapse navbar-collapse" id="navbarExample">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="/main" href="/">Back</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="masthead">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <h1 class="brand-heading">Assignment 3</h1>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">On Page and Off Page</h1>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 offset-md-2">
-                <h2>What is the difference between ON PAGE and OFF PAGE SEO?</h2>
-                <p>The difference between on page and off page SEO comes down to control. In on page SEO, you can target a search term through keyword research, create a page, and tweak the content for the best results. You have complete control over your optimization efforts. Off Page SEO is different. It relies more on promotion. These include link building, blogging, social media, and other off page SEO techniques to build awareness. Control is in the hands of your community.
-                </p>
-            </div>
-        </div>
-    </section>
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="w3-text-light-grey">What is the difference between ON PAGE and OFF PAGE SEO?</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>The difference between on page and off page SEO comes down to control. In on page SEO, you can target a search term through keyword research, create a page, and tweak the content for the best results. You have complete control over your optimization efforts. Off Page SEO is different. It relies more on promotion. These include link building, blogging, social media, and other off page SEO techniques to build awareness. Control is in the hands of your community.
+      </p>
+      
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 offset-md-2">
-                    <h2>Briefly discuss the following SEO guides for OFF-PAGE technique</h2>
-                    <p>Off page SEO refers to techniques that can be used to improve the position of a web site in the search engine results page (SERPs). Many people associate off-page SEO with link building but it is not only that. In general, off Page SEO has to do with promotion methods – beyond website design –for the purpose of ranking a website higher in the search results.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div> 
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="w3-text-light-grey">Briefly discuss the following SEO guides for OFF-PAGE technique</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>Off page SEO refers to techniques that can be used to improve the position of a web site in the search engine results page (SERPs). Many people associate off-page SEO with link building but it is not only that. In general, off Page SEO has to do with promotion methods – beyond website design –for the purpose of ranking a website higher in the search results.
+      </p>
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="w3-text-light-grey">IS IT POSSIBLE TO COMBINE STRATEGIES? IF YES, WHICH STRATEGIES WOULD YOU LIKE TO IMPLEMENT? WHY?</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>I would choose the domain name strategy. When starting a new website, one of the first and most important decisions you have to make is choosing a domain name. That choice will impact the website’s success in nearly every area, included search engine optimization (SEO) and social media marketing (SMM). Many SEO strategists would purchase exact match domains (EMDs), which are domains that exactly match the keyword phrase they are targeting. For example, if they want to rank for “buy green widgets” the person might purchase BuyGreenWidgets.com. EMDs offered two advantages.
+      </p>   
+    </div>
+  </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 offset-md-2">
-                <h2>IS IT POSSIBLE TO COMBINE STRATEGIES? IF YES, WHICH STRATEGIES WOULD YOU LIKE TO IMPLEMENT? WHY?</h2>
-                <p>I would choose the domain name strategy. When starting a new website, one of the first and most important decisions you have to make is choosing a domain name. That choice will impact the website’s success in nearly every area, included search engine optimization (SEO) and social media marketing (SMM). Many SEO strategists would purchase exact match domains (EMDs), which are domains that exactly match the keyword phrase they are targeting. For example, if they want to rank for “buy green widgets” the person might purchase BuyGreenWidgets.com. EMDs offered two advantages. </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Your Website 2017</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
-
-</body>
-
-</html>
+  </body>
+  </html>

@@ -20,6 +20,12 @@ app.get('/Padolina', function(req, res){
 app.get('/Task3', function(req, res){
   res.status(404).sendFile(path.join(__dirname, 'views/Task3.html'));
 });
+app.get('/Task4', function(req, res){
+  res.status(404).sendFile(path.join(__dirname, 'views/Task4.html'));
+});
+app.get('/Task5', function(req, res){
+  res.status(404).sendFile(path.join(__dirname, 'views/Task5.html'));
+});
 
 //express server listen
 var server = app.listen(app.get('port'), function(){

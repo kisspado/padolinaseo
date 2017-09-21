@@ -10,8 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.4"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kisspado/padolinaseo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kisspado/padolinaseo/issues"
+  },
+  "homepage": "https://github.com/kisspado/padolinaseo#readme"
 }
